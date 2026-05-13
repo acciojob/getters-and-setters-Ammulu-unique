@@ -1,5 +1,5 @@
 //complete this code
-class Person {
+class Person{
 	constructor(name,age){
 		this._name=name;
 		this._age=age;
@@ -10,26 +10,24 @@ class Person {
 	get age(){
 		return this._age;
 	}
-	set age(updated_age){
-		this._age=updated_age;
+	set age(value){
+		this._age=value;
 	}
 }
-
-class Student extends Person {
+class Student extends Person{
 	constructor(name,age){
 		super(name,age);
 	}
 	study(){
-		console.log(this.name+" is studying");
+		console.log(this._name+" is studying");
 	}
 }
-
-class Teacher extends Person {
+class Teacher extends Person{
 	constructor(name,age){
 		super(name,age);
 	}
 	teach(){
-		console.log(this.name+" is teaching");
+		console.log(this._name+" is teaching");
 	}
 }
 
